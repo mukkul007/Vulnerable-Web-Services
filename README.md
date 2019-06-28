@@ -25,8 +25,7 @@ This application includes the following vulnerabilities.
 
 # Instructions
 Web Services can be used with a XAMPP setup. XAMPP is a free and open source cross-platform web server solution which mainly consists of an Apache Web Server and MySQL database. To setup, download and install the XAMPP setup first. 
-
-Note: PHP 5.5.38 is required for most of the exercises to work correctly.
+PHP 5 is required.
 
 # Disclaimer
 Do not host this application on live or production environment.
