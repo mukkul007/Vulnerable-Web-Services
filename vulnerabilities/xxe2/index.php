@@ -46,7 +46,7 @@
 function loadDoc() {
 //create the xml payload for xml-rpc
             var req_params;
-            var greeting = "DVWS";
+            var greeting = "servicegoat";
             req_params = "<uservalue>\n";
             req_params = req_params + "<value>"+ greeting + "</value>\n";
             req_params = req_params + "</uservalue>\n";

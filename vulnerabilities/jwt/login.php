@@ -43,7 +43,7 @@
 												<p><br>The secret signing key used to verify tokens should only be accessible by the issuer and the consumer; it should not be accessible outside of these two parties. If the secret signing key used for calculating and verifying the signature is set to a weak string, it is possible to guess or brute force these values and craft a JWT token.
 													Try to log into the following application as a 'admin' user.<br></p>
        <b><form method="post" action="login_token.php">
-       <input name="username" value="dvwsuser"/>
+       <input name="username" value="servicegoatuser"/>
        <input name="password" value="password"/>
        <input type="submit" value="Log In">
      </form></br>

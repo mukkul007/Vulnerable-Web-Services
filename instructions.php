@@ -35,7 +35,7 @@
 
 
 
-                        <p>Click on the 'Create / Reset Database' button below to create or reset your database. If the database already exists, it will be cleared and all data will be reset. Incase of any MySQL Access denied error, make necessary changes in the <b>dvws/instructions.php.</b></p>
+                        <p>Click on the 'Create / Reset Database' button below to create or reset your database. If the database already exists, it will be cleared and all data will be reset. Incase of any MySQL Access denied error, make necessary changes in the <b>servicegoat/instructions.php.</b></p>
 
 
 
@@ -50,12 +50,12 @@
 <?php
    if (isset( $_POST["create_db"])) {
 //connect to database. Make necessary changes to $connect for successful connection
-		$connect =  new mysqli('localhost', 'root', '');
+		$connect =  new mysqli('localhost', 'root', 'batman');
 		if ($connect->connect_error) {
 		die("Connection failed<br> " . $conn->connect_error);
 		}
 //delete previous database
-        $drop_db = "DROP DATABASE dvws";
+        $drop_db = "DROP DATABASE servicegoat";
 
 		if ($connect->query($drop_db) === TRUE) {
 			echo "<br>Database deleted successfully <br>";
@@ -63,7 +63,7 @@
 			echo "Error deleting database <br> " . $connect->error;
 		}
 //create new database
-		$create_db = "CREATE DATABASE dvws";
+		$create_db = "CREATE DATABASE servicegoat";
 
 		if ($connect->query($create_db) === TRUE) {
 			echo "<br> Database created successfully ";
@@ -71,7 +71,7 @@
 			echo "Error creating database <br> " . $connect->error;
 		}
 
-		$connect =  new mysqli('localhost', 'root', '','dvws');
+		$connect =  new mysqli('localhost', 'root', 'batman','servicegoat');
 
 		$create_tb = "CREATE TABLE users
 		(

@@ -10,10 +10,10 @@
     <title>Setup Instructions</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/dvws/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/servicegoat/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/dvws/css/simple-sidebar.css" rel="stylesheet">
+    <link href="/servicegoat/css/simple-sidebar.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,27 +32,27 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="/dvws/index.html">
+                    <a href="/servicegoat/index.html">
                         Home
                     </a>
                 </li>
-                <li><a href="/dvws/about/">About</a></li>
-                <li><a href="/dvws/about/instructions.php">Setup instructions</a></li>
-                <li><a href="/dvws/appinfo.php">PHP Information</a></li>
+                <li><a href="/servicegoat/about/">About</a></li>
+                <li><a href="/servicegoat/about/instructions.php">Setup instructions</a></li>
+                <li><a href="/servicegoat/appinfo.php">PHP Information</a></li>
         
                                 <li class="sidebar-brand">
-                    <a href="/dvws/vulnerabilities/">
+                    <a href="/servicegoat/vulnerabilities/">
                         Vulnerabilities
                     </a>
-                <li><a href="/dvws/vulnerabilities/wsdlenum/">WSDL Enumeration</a></li>
-                <li><a href="/dvws/vulnerabilities/xmlbomb/xmlbomb.php">XML Bomb Denial-of-Service</a></li>
-                <li><a href="/dvws/vulnerabilities/xxe/">XML External Entity Injection</a></li>
-                <li><a href="/dvws/vulnerabilities/xpath/xpath.php">XPATH Injection</a></li>
-                <li><a href="/dvws/vulnerabilities/cmdi/client.php">Command Injection</a></li>
-                <li><a href="/dvws/vulnerabilities/xst/xst.php">Cross Site Tracing (XST)</a></li>
-                <li><a href="/dvws/vulnerabilities/ssrf/">Server Side Request Forgery</a></li>
-                <li><a href="/dvws/vulnerabilities/sqli/">REST API SQL Injection</a></li>
-				   <li><a href="/dvws/vulnerabilities/xxe2/">XML External Entity Injection 2</a></li>
+                <li><a href="/servicegoat/vulnerabilities/wsdlenum/">WSDL Enumeration</a></li>
+                <li><a href="/servicegoat/vulnerabilities/xmlbomb/xmlbomb.php">XML Bomb Denial-of-Service</a></li>
+                <li><a href="/servicegoat/vulnerabilities/xxe/">XML External Entity Injection</a></li>
+                <li><a href="/servicegoat/vulnerabilities/xpath/xpath.php">XPATH Injection</a></li>
+                <li><a href="/servicegoat/vulnerabilities/cmdi/client.php">Command Injection</a></li>
+                <li><a href="/servicegoat/vulnerabilities/xst/xst.php">Cross Site Tracing (XST)</a></li>
+                <li><a href="/servicegoat/vulnerabilities/ssrf/">Server Side Request Forgery</a></li>
+                <li><a href="/servicegoat/vulnerabilities/sqli/">REST API SQL Injection</a></li>
+				   <li><a href="/servicegoat/vulnerabilities/xxe2/">XML External Entity Injection 2</a></li>
                 
             </ul>
             
@@ -69,7 +69,7 @@
 
 
 
-                        <p>Click on the 'Create / Reset Database' button below to create or reset your database. If the database already exists, it will be cleared and all data will be reset. Incase of any MySQL Access denied error, make necessary changes in the <b>dvws/instructions.php</b> for database connection.</p>
+                        <p>Click on the 'Create / Reset Database' button below to create or reset your database. If the database already exists, it will be cleared and all data will be reset. Incase of any MySQL Access denied error, make necessary changes in the <b>servicegoat/instructions.php</b> for database connection.</p>
                  
                         
                    
@@ -89,7 +89,7 @@
 		die("Connection failed<br> " . $conn->connect_error);
 		} 
 //delete previous database	
-        $drop_db = "DROP DATABASE dvws";
+        $drop_db = "DROP DATABASE servicegoat";
         
 		if ($connect->query($drop_db) === TRUE) {
 			echo "<br>Database deleted successfully <br>";
@@ -97,7 +97,7 @@
 			echo "Error deleting database <br> " . $connect->error;
 		}
 //create new database			
-		$create_db = "CREATE DATABASE dvws";
+		$create_db = "CREATE DATABASE servicegoat";
 
 		if ($connect->query($create_db) === TRUE) {
 			echo "Database created successfully <br>";
@@ -105,7 +105,7 @@
 			echo "Error creating database <br> " . $connect->error;
 		}
 
-		$connect =  new mysqli('localhost', 'root', '','dvws');
+		$connect =  new mysqli('localhost', 'root', '','servicegoat');
 
 		$create_tb = "CREATE TABLE users
 		(

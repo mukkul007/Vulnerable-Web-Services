@@ -50,7 +50,7 @@ require 'auth.php';
 
 $auth = new PHP_API_AUTH(array(
 	'secret'=>'1234567890',
-	'authenticator'=>function($user,$pass){ if ($user=='dvwsuser' && $pass=='password' || $user=='admin' && $pass=='adminpass$') $_SESSION['user']=$user; }
+	'authenticator'=>function($user,$pass){ if ($user=='servicegoatuser' && $pass=='password' || $user=='admin' && $pass=='adminpass$') $_SESSION['user']=$user; }
 
 ));
 
@@ -67,7 +67,7 @@ if(empty($_POST['username']) && empty($_POST['password']) )
 }
 
 $userinfo = array(
-                'dvwsuser'=>'password',
+                'servicegoatuser'=>'password',
                 'admin'=>'adminpass$'
                 );
 

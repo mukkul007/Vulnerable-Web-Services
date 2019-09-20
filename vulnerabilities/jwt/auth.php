@@ -167,8 +167,8 @@ class PHP_API_AUTH {
 			<?php
 			if ($_SESSION['user'] == 'admin') {
 			 echo '<br> Successfully logged in as user \'admin\'. ';
-			} elseif ($_SESSION['user'] == 'dvwsuser') {
-				 echo '<br> Successfully logged in as user \'dvwsuser\'. Try to log in as the user \'admin\'';
+			} elseif ($_SESSION['user'] == 'servicegoatuser') {
+				 echo '<br> Successfully logged in as user \'servicegoatuser\'. Try to log in as the user \'admin\'';
 			} else {
 			 echo "<br> Not authenticated, Please log in again.";
 			}

@@ -9,10 +9,10 @@
     <title>Setup Instructions</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="/dvws/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/servicegoat/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="/dvws/css/simple-sidebar.css" rel="stylesheet">
+    <link href="/servicegoat/css/simple-sidebar.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,27 +31,27 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="/dvws/index.html">
+                    <a href="/servicegoat/index.html">
                         Home
                     </a>
                 </li>
-                <li><a href="/dvws/about/">About</a></li>
-                <li><a href="/dvws/about/instructions.php">Setup instructions</a></li>
-                <li><a href="/dvws/appinfo.php">PHP Information</a></li>
+                <li><a href="/servicegoat/about/">About</a></li>
+                <li><a href="/servicegoat/about/instructions.php">Setup instructions</a></li>
+                <li><a href="/servicegoat/appinfo.php">PHP Information</a></li>
         
                                 <li class="sidebar-brand">
-                    <a href="/dvws/vulnerabilities/">
+                    <a href="/servicegoat/vulnerabilities/">
                         Vulnerabilities
                     </a>
-                <li><a href="/dvws/vulnerabilities/wsdlenum/">WSDL Enumeration</a></li>
-                <li><a href="/dvws/vulnerabilities/xmlbomb/xmlbomb.php">XML Bomb Denial-of-Service</a></li>
-                <li><a href="/dvws/vulnerabilities/xxe/">XML External Entity Injection</a></li>
-                <li><a href="/dvws/vulnerabilities/xpath/xpath.php">XPATH Injection</a></li>
-                <li><a href="/dvws/vulnerabilities/cmdi/client.php">Command Injection</a></li>
-                <li><a href="/dvws/vulnerabilities/xst/xst.php">Cross Site Tracing (XST)</a></li>
-                <li><a href="/dvws/vulnerabilities/ssrf/">Server Side Request Forgery</a></li>
-                <li><a href="/dvws/vulnerabilities/sqli/">REST API SQL Injection</a></li>
-				   <li><a href="/dvws/vulnerabilities/xxe2/">XML External Entity Injection 2</a></li>
+                <li><a href="/servicegoat/vulnerabilities/wsdlenum/">WSDL Enumeration</a></li>
+                <li><a href="/servicegoat/vulnerabilities/xmlbomb/xmlbomb.php">XML Bomb Denial-of-Service</a></li>
+                <li><a href="/servicegoat/vulnerabilities/xxe/">XML External Entity Injection</a></li>
+                <li><a href="/servicegoat/vulnerabilities/xpath/xpath.php">XPATH Injection</a></li>
+                <li><a href="/servicegoat/vulnerabilities/cmdi/client.php">Command Injection</a></li>
+                <li><a href="/servicegoat/vulnerabilities/xst/xst.php">Cross Site Tracing (XST)</a></li>
+                <li><a href="/servicegoat/vulnerabilities/ssrf/">Server Side Request Forgery</a></li>
+                <li><a href="/servicegoat/vulnerabilities/sqli/">REST API SQL Injection</a></li>
+				   <li><a href="/servicegoat/vulnerabilities/xxe2/">XML External Entity Injection 2</a></li>
                 
             </ul>
             

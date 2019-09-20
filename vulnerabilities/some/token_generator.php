@@ -5,8 +5,8 @@
 $referer = $_SERVER['HTTP_REFERER'];
 // http that made the request
 
-$srvip = '<form action="/dvws/instructions.php" method="post">
-		<input name="create_db" type="submit" value="Reset DVWS Database">';
+$srvip = '<form action="/servicegoat/instructions.php" method="post">
+		<input name="create_db" type="submit" value="Reset servicegoat Database">';
 
 
  $token = MD5(substr($_GET['mycallback'],6,-14));

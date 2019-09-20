@@ -56,7 +56,7 @@ var str2 = "/token_generator.php?"
 var url_a = url.concat(str1,dir,str2);
 
 
-var dataObj = { param1: 'retrievetoken', param2: 'dvwsuser', param3: 'some'};
+var dataObj = { param1: 'retrievetoken', param2: 'servicegoatuser', param3: 'some'};
 
         $.ajax({
                 url : url_a,
